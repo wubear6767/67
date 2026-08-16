@@ -2,16 +2,18 @@
 <html lang="zh-Hant">
 <head>
     <meta charset="UTF-8">
-    <title>救贖之影 - 火柴人彩色動畫</title>
+    <title>救贖之影 - 彩色火柴人動畫</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
         <h1>《救贖之影》</h1>
-        <canvas id="animationCanvas" width="800" height="450"></canvas>
-        <div id="dialogue-box">載入中...</div>
+        <div class="canvas-container">
+            <canvas id="animationCanvas" width="800" height="450"></canvas>
+            <div id="subtitle-box">準備開始播放...</div>
+        </div>
         <div class="controls">
-            <button id="playBtn">播放 / 暫停</button>
+            <button id="playBtn">開始播放動畫</button>
         </div>
     </div>
     <script src="script.js"></script>
