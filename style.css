@@ -14,28 +14,45 @@ body {
     text-align: center;
 }
 
-canvas {
-    background-color: #1e1e1e;
+.canvas-container {
+    position: relative;
+    width: 800px;
+    height: 450px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.7);
     border: 2px solid #444;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
 }
 
-#dialogue-box {
-    margin-top: 15px;
-    font-size: 18px;
-    min-height: 40px;
+canvas {
+    background-color: #1e1e1e;
+    display: block;
+}
+
+/* 字幕疊在畫面內部的最下方 */
+#subtitle-box {
+    position: absolute;
+    bottom: 15px;
+    left: 50px;
+    right: 50px;
+    background-color: rgba(0, 0, 0, 0.75);
     color: #00d2ff;
+    padding: 10px 15px;
+    font-size: 18px;
+    border-radius: 4px;
+    text-align: center;
+    min-height: 25px;
+    border: 1px solid #555;
 }
 
 .controls {
-    margin-top: 10px;
+    margin-top: 15px;
 }
 
 button {
-    padding: 8px 16px;
+    padding: 10px 20px;
     background-color: #00d2ff;
     border: none;
     color: #121212;
+    font-size: 16px;
     font-weight: bold;
     cursor: pointer;
     border-radius: 4px;
